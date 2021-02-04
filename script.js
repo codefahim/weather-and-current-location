@@ -32,9 +32,11 @@ function location_hadle(){
 
         if(yourLocation !== ""){
         document.getElementById('customInput').placeholder =yourLocation;
+        document.getElementById('location').innerText = yourLocation;
         handle_fetch(yourLocation);
         }else{
                document.getElementById('customInput').placeholder =countryName;
+               document.getElementById('location').innerText = "Maybe Your are using VPN.";
                 handle_fetch(countryName);
         }
 
