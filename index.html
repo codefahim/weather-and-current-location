@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Current weather data and Location</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter a location for Weather ..." id="customInput">
+                <div class="input-group-append">
+                    <button id="search" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="myImg" src="http://openweathermap.org/img/w/10d.png" alt="">
+            <h1 id="cityName" style="color: #ecf0f1">Your City Name</h1>
+            <h3 style="color: #ecf0f1"><span id="temp">Wait</span>&deg;C</h3>
+            <h1 class="lead" id="description" style="color: #ecf0f1">Wait</h1>
+            <h3 style="color: #ecf0f1">Your Location: <span id="location"></span></h3>
+            <h5 style="color: #ecf0f1">Your Country Name: <span id="countryName"></span></h5>
+             <h5 style="color: #ecf0f1">Your Time Zone: <span id="timeZone"></span></h5>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
