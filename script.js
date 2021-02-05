@@ -39,8 +39,6 @@ function location_hadle(){
                document.getElementById('location').innerText = "Maybe Your are using VPN.";
                 handle_fetch(countryName);
         }
-
-       console.log(data);
         
     })
  
